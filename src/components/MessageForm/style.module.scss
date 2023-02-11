@@ -1,0 +1,108 @@
+@import '../../styles/variables.scss';
+
+.formContainer {
+    position: relative;
+    max-width: 516px;
+    background-color: $bg-black-two;
+    border: 1px solid #3b3b3b;
+    border-radius: 3px;
+    padding: 24px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .deleteAvatar {
+        position: absolute;
+        top: 56px;
+        left: calc(50% + 60px);
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+    }
+
+    .avatar {
+        position: relative;
+        width: 88px;
+        height: 88px;
+        margin: 0 auto 16px;
+        border-radius: 36px;
+        overflow: hidden;
+        
+        input {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        .avatarIcon {
+            display: block;
+            padding: 31px;
+            border: 1px solid #4b4b4b;
+            border-radius: 36px;
+            box-sizing: border-box;
+        }
+
+        .avatarImg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .inputText{
+
+        :placeholder-shown {
+            color: $text-color-one;
+        }
+
+        display: block;
+        width: 100%;
+        resize: none;
+        background-color: #494949;
+        margin-bottom: 8px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.29;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .formBtns {
+        display: flex;
+        justify-content: end;
+        margin-top: 16px;
+
+        button {
+            padding: 12px 24px;
+            border: none;
+        }
+
+        .cancel {
+            background-color: inherit;
+            color: $text-color-two;
+            text-decoration: underline $text-color-two;
+        }
+
+        .submit {
+            background-color: #71bb00;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        .submit:disabled {
+            background-color: $text-color-two;
+            color: $bg-black-two;
+        }
+        
+    }
+}
