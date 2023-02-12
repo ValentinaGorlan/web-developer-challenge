@@ -24,6 +24,7 @@
             list-style: none;
             padding: 56px 24px 32px;
             box-sizing: border-box;
+            margin-bottom: 16px;
     
             display: flex;
     
@@ -44,7 +45,6 @@
             .messageText {
     
                 .message {
-                    // font-family: 'Roboto';
                     font-size: 16px;
                     color: $text-color-one;
                     line-height: 1.25;
